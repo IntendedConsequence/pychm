@@ -364,7 +364,7 @@ class CHMFile:
         The UnitInfo is used to retrieve the document contents
         '''
         if self.file:
-            path = os.path.abspath(document)
+            path = document
             return chmlib.chm_resolve_object(self.file, path)
         else:
             return (1, None)
